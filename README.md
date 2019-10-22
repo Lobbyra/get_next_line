@@ -1,5 +1,5 @@
 # get_next_line
----
+
 ## This is case what my function take care and work perfectly :
 ### About buffer
 - Big buffers (> 1024).

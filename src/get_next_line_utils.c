@@ -6,27 +6,11 @@
 /*   By: jecaudal <jecaudal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/19 18:22:13 by jecaudal          #+#    #+#             */
-/*   Updated: 2019/10/19 19:00:36 by jecaudal         ###   ########.fr       */
+/*   Updated: 2019/10/21 13:55:47 by jecaudal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/get_next_line.h"
-
-int		ft_is_a_cn(char *str, char c, int n)
-{
-	int i;
-
-	i = 0;
-	while (str && str[i] && ((n > 0 && i < n) || n < 0))
-	{
-		if (str[i] == c)
-			return (1);
-		i++;
-	}
-	if (str[i] == c)
-		return (1);
-	return (0);
-}
 
 void	ft_bzero(void *s, size_t n)
 {
@@ -76,12 +60,7 @@ char	*ft_strcut_c(char *str, char c)
 	while (str[i] != c)
 		i++;
 	i++;
-	if (!(new = (char*)malloc(sizeof(char) *
-	(ft_strlen_cn(&str[i], '\0', -1) + 1))))
-		return (NULL);
-	while (str[i])
-		new[j++] = str[i++];
-	new[j] = '\0';
+	new = ft_strdup_cn(&str[i], '\0', -1);
 	free(str);
 	return (new);
 }

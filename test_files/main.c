@@ -6,11 +6,11 @@
 /*   By: Lobbyra <Lobbyra@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/20 03:37:26 by Lobbyra           #+#    #+#             */
-/*   Updated: 2019/10/30 08:15:27 by Lobbyra          ###   ########.fr       */
+/*   Updated: 2019/10/31 09:42:44 by jecaudal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include "../get_next_line.h"
 #include <string.h>
 #include <stdlib.h>
 #include <stdio.h>

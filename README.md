@@ -1,3 +1,3 @@
-Hello world !
+Hello all
 
-This part is to do sry.
+To compile run ./compilator [a int for BUFFER_SIZE]

@@ -39,10 +39,8 @@ char	*ft_strdup_c(char *str, char c)
 char	*ft_strcut_c(char *str, char c)
 {
 	int		i;
-	int		j;
 
 	i = 0;
-	j = 0;
 	if (!(str))
 		return (NULL);
 	if (is_a_c(str, c) == 0)

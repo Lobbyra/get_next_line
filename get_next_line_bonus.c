@@ -6,12 +6,11 @@
 /*   By: jecaudal <jecaudal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/18 09:04:57 by jecaudal          #+#    #+#             */
-/*   Updated: 2019/10/30 08:13:03 by Lobbyra          ###   ########.fr       */
+/*   Updated: 2019/10/31 10:30:15 by jecaudal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
-#include <stdio.h>
 
 int		ft_strlen_c(char *str, char c)
 {
@@ -23,9 +22,6 @@ int		ft_strlen_c(char *str, char c)
 	return (i);
 }
 
-/*
-	If they are c in str, this fun return 1, 0 else.
-*/
 int		is_a_c(char *str, char c)
 {
 	int i;

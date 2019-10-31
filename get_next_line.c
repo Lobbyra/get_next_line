@@ -6,7 +6,7 @@
 /*   By: jecaudal <jecaudal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/18 09:04:57 by jecaudal          #+#    #+#             */
-/*   Updated: 2019/10/31 10:18:14 by jecaudal         ###   ########.fr       */
+/*   Updated: 2019/10/31 10:29:15 by jecaudal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,9 +23,6 @@ int		ft_strlen_c(char *str, char c)
 	return (i);
 }
 
-/*
-	If they are c in str, this fun return 1, 0 else.
-*/
 int		is_a_c(char *str, char c)
 {
 	int i;

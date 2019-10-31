@@ -6,15 +6,12 @@
 /*   By: jecaudal <jecaudal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/19 18:22:13 by jecaudal          #+#    #+#             */
-/*   Updated: 2019/10/30 08:04:17 by Lobbyra          ###   ########.fr       */
+/*   Updated: 2019/10/31 10:29:31 by jecaudal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
 
-/*
-	This fun dup str until c.
-*/
 char	*ft_strdup_c(char *str, char c)
 {
 	int		i;
@@ -33,9 +30,6 @@ char	*ft_strdup_c(char *str, char c)
 	return (new);
 }
 
-/*
-	This fun dup str less 1st field and take as separator c.
-*/
 char	*ft_strcut_c(char *str, char c)
 {
 	int		i;
@@ -51,9 +45,6 @@ char	*ft_strcut_c(char *str, char c)
 	return (ft_strdup_c(&str[i], '\0'));
 }
 
-/*
-	This fun create a new string with s2 concatenated at the of s1.
-*/
 char	*ft_strjoin(char *s1, char *s2)
 {
 	int		i;

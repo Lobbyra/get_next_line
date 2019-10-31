@@ -1,14 +1,21 @@
+RED="\e[91m"
+ERROR_EMOJI="\xE2\x9D\x8C"
+CRINGE_EMOJI="\xF0\x9F\x98\x85"
+PINK="\e[95m"
+YELLOW="\e[93m"
+WHITE="\e[97m"
+if [ "$#" -ne 1 ]
+then
+    printf "$CRINGE_EMOJI$YELLOW[Illegal number of parameters]$CRINGE_EMOJI$WHITE"
+	exit 1;
+fi
 rm -rf log deeptough src test tests sortie_correct test.c test.sh gnlkiller 42TESTERS-GNL
 STR="--extra"
-RED="\e[91m"
 GREEN="\e[92m"
-PINK="\e[95m"
 BLUE="\e[96m"
 TICK_GREEN="\xE2\x9C\x85"
-ERROR_EMOJI="\xE2\x9D\x8C"
 LIGHT_EMOJI="\xF0\x9F\x92\xA1"
 HUNDRED_EMOJI="\xF0\x9F\x92\xAF"
-WHITE="\e[97m"
 if [[ "$1" == "$STR" ]]
 then
 	if [ -a get_next_line.c ]

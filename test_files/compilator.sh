@@ -44,21 +44,7 @@ else
 	else
 		printf "$ERROR_EMOJI$RED[Compilation error]$ERROR_EMOJI\n$WHITE"
 	fi
-	if [ -a ../get_next_line_bonus.c ]
-	then
-		gcc -W -Wall -Wextra -Werror -o get_next_line_bonus -D BUFFER_SIZE=$1 main.c ../get_next_line_bonus.c ../get_next_line_utils_bonus.c
-		if [ "$?" = "0" ]
-		then
-			printf "$TICK_GREEN$GREEN[Compilation done]$TICK_GREEN\n$WHITE"
-		else
-			printf "$ERROR_EMOJI$RED[Compilation bonus error]$ERROR_EMOJI\n$WHITE"
-		fi
-	else
-		printf "$HUNDRED_EMOJI$PINK[Bonus not found]$WHITE$HUNDRED_EMOJI"
-	fi
-		
 	mv get_next_line ..
-	mv get_next_line_bonus ..
 	cd ..
 fi
 
